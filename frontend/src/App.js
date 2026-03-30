@@ -6,7 +6,7 @@ function App() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await fetch("http://localhost:5000/health");
+        const res = await fetch("https://system-health-dashboard-q0j6.onrender.com/health");
         const json = await res.json();
         setData(json);
       } catch (err) {
